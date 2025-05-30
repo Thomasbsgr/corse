@@ -1,7 +1,7 @@
 @use 'var';
 
 .feature_section {
-    padding: 64px 0;
+    padding: 25px 0 64px;
 
     .feature_section__container {
         max-width: 1200px;
@@ -35,6 +35,7 @@
 
         .feature_section__media_text {
             display: flex;
+            align-items: center;
 
             img {
                 width: 592px;
@@ -44,11 +45,11 @@
 
             .feature_section__media_text__text {
                 width: 592px;
-                padding: 30px 30px;
+                padding: 0 30px;
 
                 h3 {
                     font-size: 24px;
-                    font-weight: 400;
+                    font-weight: 600;
                 }
 
                 .feature_section__media_text__text--p {
