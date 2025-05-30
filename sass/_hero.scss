@@ -1,0 +1,118 @@
+@use 'var';
+
+.hero {
+    height: 100vh;
+    background: url(var.$bg_hero);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .header {
+        height: var.$header_height;
+        background-color: rgba(0, 0, 0, 0.2);
+        justify-items: center;
+        align-content: center;
+        width: 100%;
+
+        .header__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                a {
+                    font-size: 24px;
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 800;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                    transition: font-size 0.3s ease-in-out;
+                }
+
+                a:hover {
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+
+    .hero__alltext {
+        background-color: #ffffffE6;
+        width: 620px;
+        height: 200px;
+        border-radius: 10px;
+        padding: 20px 32px 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        opacity: 0;
+        transform: translateX(-60px);
+        animation: slideInLeft 1s ease-out forwards;
+
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        h2 {
+            color: var.$blue;
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-family: Raleway, sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        // .hero__button {
+        //     height: 44px;
+        //     width: 608px;
+        //     display: flex;
+        //     align-items: center;
+        //     gap: 20px;
+
+        //     a {
+        //         padding: 12px 24px;
+        //         text-decoration: none;
+        //         font-family: Raleway, sans-serif;
+        //         font-weight: 600;
+        //         font-size: 14px;
+        //         border-radius: 10px;
+        //     }
+
+        //     .hero__button--primary {
+        //         color: white;
+        //         background-color: var.$blue;
+        //         transition: background 0.2s ease-in-out;
+        //     }
+
+        //     .hero__button--secondary {
+        //         color: var.$blue;
+        //         background-color: white;
+        //         border: solid 1px var.$blue;
+        //         transition: background 0.2s ease-in-out, color 0.3s ease-in-out;
+        //     }
+
+        //     .hero__button--primary:hover {
+        //         background: rgba(0, 116, 179, 0.8);
+        //     }
+
+        //     .hero__button--secondary:hover {
+        //         color: black;
+        //         background: linear-gradient(rgba(0, 116, 179, 0.05), rgba(0, 116, 179, 0.05));
+        //         border: solid 1px var.$blue;
+        //     }
+        // }
+    }
+}

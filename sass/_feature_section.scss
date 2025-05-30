@@ -1,0 +1,92 @@
+@use 'var';
+
+.feature_section {
+    padding: 64px 0;
+
+    .feature_section__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .feature_section__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 768px;
+            margin-bottom: 48px;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 800;
+                color: var.$blue;
+                margin-bottom: 24px;
+            }
+
+            p {
+                font-family: Raleway, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+
+        .feature_section__media_text {
+            display: flex;
+
+            img {
+                width: 592px;
+                height: 400px;
+                border-radius: 10px;
+            }
+
+            .feature_section__media_text__text {
+                width: 592px;
+                padding: 30px 30px;
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+
+                .feature_section__media_text__text--p {
+                    font-family: Raleway, sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-top: 24px;
+                }
+
+                .feature_section__text--svg_text {
+                    height: 96px;
+                    margin-top: 24px;
+
+                    .feature_section__text--svg_text--div {
+                        display: flex;
+                        gap: 8px;
+                        font-family: Raleway, sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-top: 12px;
+                    }
+                }
+
+                .feature_section__media_text__button {
+                    display: inline-block;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: white;
+                    background: var.$blue;
+                    margin-top: 24px;
+                    border-radius: 5px;
+                    transition: background-color 0.2s ease-in-out;
+                }
+
+                .feature_section__media_text__button:hover {
+                    background: rgba(0, 116, 179, 0.8);
+                }
+            }
+        }
+    }
+}
