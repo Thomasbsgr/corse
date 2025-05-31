@@ -25,3 +25,14 @@
 .blue_button:hover {
   background: rgba(0, 116, 179, 0.8);
 }
+
+.display {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.separator {
+  background: var.$blue;
+  height: 5px;
+}
