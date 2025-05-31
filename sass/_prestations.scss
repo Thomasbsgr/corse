@@ -1,0 +1,19 @@
+@use 'var';
+
+.prestations {
+    height: 100vh;
+    padding: 64px 0;
+
+    .prestations__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // .prestations__container--h2 {
+            
+        // }
+    }
+}

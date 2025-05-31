@@ -1,8 +1,13 @@
+@use 'var';
+@use 'class';
+
 @use 'playfairdisplay';
 @use 'raleway';
+
+
 @use 'hero';
 @use 'feature_section';
-@use 'var';
+@use 'prestations';
 
 *,
 *::before,
